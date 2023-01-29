@@ -255,17 +255,16 @@
             else if ((opo > 20) || (opc > 20) || (ops > 20)) {
                 document.getElementById('rsop').innerHTML = "Erreur"
             }
-        }
-        function calphil() {
-            mad = document.getElementById('mad').value;
-            philc = document.getElementById('philc').value;
-            phils = document.getElementById('phils').value;
-            phil = document.getElementById('rsphil').innerHTML = (Number(philc) + Number(mad) + Number(phils) * 2) / 4
-            if ((philc == "") || (phils == "") || (mad == "")) {
-                document.getElementById('rsphil').innerHTML = "saisir votre moyenne!"
+      function calmad() {
+            mado = document.getElementById('mado').value;
+            madc = document.getElementById('madc').value;
+            mads = document.getElementById('mads').value;
+            mad = document.getElementById('rsmad').innerHTML = (Number(mado) + Number(madc) + Number(mads) * 2) / 4
+            if ((mado == "") || (madc == "") || (mads == "")) {
+                document.getElementById('rsmad').innerHTML = "saisir votre moyenne!"
             }
-            else if ((philc > 20) || (phils > 20) || (mad > 20)) {
-                document.getElementById('rsphil').innerHTML = "Erreur"
+            else if ((mado > 20) || (madc > 20) || (mads > 20)) {
+                document.getElementById('rsmad').innerHTML = "Erreur"
             }
         }
         function calmath() {
