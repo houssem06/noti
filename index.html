@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noti</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://kit.fontawesome.com/c3294ef69d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        .top {
+            margin: 0;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        ul li {
+            box-sizing: border-box;
+            width: 18em;
+            height: 3em;
+            font-size: 20px;
+            border-radius: 0.5em;
+            margin: 0.5em;
+            box-shadow: 1px 5px 1em rgba(17, 17, 17, 0.63);
+            color: white;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            line-height: 3em;
+            transition: 0.3s;
+            cursor: pointer;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li:nth-child(odd) {
+            background: linear-gradient(to right, DeepSkyBlue, DarkViolet);
+            text-align: left;
+            padding-left: 10%;
+            transform: perspective(500px) rotateY(45deg);
+
+
+        }
+
+        ul li:nth-child(even) {
+            background: linear-gradient(to left, DeepSkyBlue, DarkViolet);
+            text-align: right;
+            padding-right: 10%;
+            transform: perspective(500px) rotateY(-45deg);
+        }
+
+        ul li:nth-child(odd):hover {
+            transform: perspective(300px) rotateY(45deg);
+            padding-left: 5%;
+        }
+
+        ul li:nth-child(even):hover {
+            transform: perspective(300px) rotateY(-45deg);
+            padding-right: 5%;
+        }
+
+        .soc {
+
+            margin-right: 80%;
+            border-radius: 15px;
+
+        }
+
+        .soc table tr td a {
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        tr td {
+            padding-left: 11px;
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+        tr td :hover {
+            color: aqua;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 175%;
+            text-align: right;
+            padding-top: 3.7%;
+            padding-right: 2%;
+            color: rgba(0, 0, 0, 0.862);
+            font-style: italic;
+        }
+    </style>
+    <div class="soc">
+        <table>
+            <tr>
+                <td><a href="https://www.facebook.com/houssem.bensassi.9/"><i class="fa-brands fa-facebook"></i>
+                        Facebook</a></td>
+                <td><a href="https://www.instagram.com/sassihoussem_/"><i class="fa-brands fa-instagram"></i>
+                        Instagram</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">houssembensassi31@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    <div class="top">
+        <ul>
+            <li> <a href="1er.html"> 1er</a></li>
+            <li><a href="2eme.html">2eme</a></li>
+            <li><a href="3eme.html">3eme</a></li>
+            <li><a href="bac.html">Bac </a></li>
+        </ul>
+    </div>
+    <h2> By Houssem Ben Sassi </h2>
+</body>
+
+</html>

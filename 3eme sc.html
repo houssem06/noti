@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3eme sc</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <div id="arab" onmouseleave="calcul()">
+        Arabe: <br>
+        <nav>
+            <input type="number" id="ar" placeholder="Oral"><br>
+            <input type="number" id="arc" placeholder="Control"> <br>
+            <input type="number" id="ars" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="res"> </div>
+    </div>
+
+
+    <div id="fr" onmouseleave="cal()">
+        Francais: <br>
+        <nav>
+            <input type="number" id="fro" placeholder="Oral"><br>
+            <input type="number" id="cn" placeholder="Control"> <br>
+            <input type="number" id="sn" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="es"></div>
+    </div>
+
+    <div id="ang" onmouseleave="calang()">
+        Anglais: <br>
+        <nav>
+            <input type="number" id="ango" placeholder="Oral"><br>
+            <input type="number" id="angc" placeholder="Control"> <br>
+            <input type="number" id="angs" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsang"></div>
+    </div>
+
+    <div id="his" onmouseleave="calhis()">
+        Histoire: <br>
+        <nav>
+            <input type="number" id="hiso" placeholder="Oral"><br>
+            <input type="number" id="hisc" placeholder="Control"> <br>
+            <input type="number" id="hiss" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rshis"></div>
+    </div>
+
+    <div id="geo" onmouseleave="calgeo()">
+        Geografie: <br>
+        <nav>
+            <input type="number" id="geoo" placeholder="Oral"><br>
+            <input type="number" id="geoc" placeholder="Control"> <br>
+            <input type="number" id="geos" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsgeo"></div>
+    </div>
+
+    <div id="phil" onmouseleave="calphil()">
+        Philosophie: <br>
+        <nav>
+            <input type="number" id="philc" placeholder="Control"> <br>
+            <input type="number" id="phils" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsphil"></div>
+    </div>
+
+    <div id="option" onmouseleave="calop()">
+        Option: <br>
+        <nav>
+            <input type="number" id="opo" placeholder="Oral"><br>
+            <input type="number" id="opc" placeholder="Control"> <br>
+            <input type="number" id="ops" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsop"></div>
+    </div>
+
+    <div id="isl" onmouseleave="calisl()">
+        Islameya: <br>
+        <nav>
+            <input type="number" id="islo" placeholder="Oral"><br>
+            <input type="number" id="islc" placeholder="Control"> <br>
+            <input type="number" id="isls" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsisl"></div>
+    </div>
+
+    <div id="info" onmouseleave="calinf()">
+        Informatique: <br>
+        <nav>
+            <input type="number" id="inf" placeholder="Control"> <br>
+            <input type="number" id="infs" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsinf"></div>
+    </div>
+
+
+    <div id="math" onmouseleave="calmath()">
+        Math: <br>
+        <nav>
+            <input type="number" id="mathc" placeholder="Control"> <br>
+            <input type="number" id="maths" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsmath"></div>
+    </div>
+
+    <div id="phy" onmouseleave="calphy()">
+        Physique: <br>
+        <nav>
+            <input type="number" id="phyt" placeholder="Tp"><br>
+            <input type="number" id="phyc" placeholder="Control"> <br>
+            <input type="number" id="phys" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsphy"></div>
+    </div>
+
+    <div id="prog" onmouseleave="calprog()">
+        Science: <br>
+        <nav>
+            <input type="number" id="progt" placeholder="Tp"><br>
+            <input type="number" id="progc" placeholder="Control"> <br>
+            <input type="number" id="progs" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rsprog"></div>
+    </div>
+
+    <div id="sport" onmouseleave="calsport()">
+        Sport: <br>
+        <nav>
+            <input type="number" id="sportc" placeholder="Control"> <br>
+            <input type="number" id="sports" placeholder="Synthese"> <br>
+        </nav>
+        
+
+        <div id="rssport"></div>
+    </div>
+    <div class="result">
+        <input type="button" value="Ehseb lkol" onclick="ss()">
+        <div id="hh"></div>
+    </div>
+    <script>
+        function calcul() {
+
+
+            ar = document.getElementById('ar').value;
+            arc = document.getElementById('arc').value;
+            ars = document.getElementById('ars').value;
+            st = document.getElementById('res').innerHTML = ((Number(ar) + Number(arc) + (Number(ars) * 2)) / 4) * 2
+
+
+            if ((ar == "") || (arc == "") || (ars == "")) {
+                document.getElementById('res').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((ar > 20) || (rc > 20) || (ars > 20)) {
+                document.getElementById('res').innerHTML = "Erreur"
+            }
+        }
+        function cal() {
+            fro = document.getElementById('fro').value;
+            cn = document.getElementById('cn').value;
+            sn = document.getElementById('sn').value;
+            rt = document.getElementById('es').innerHTML = ((Number(fro) + Number(cn) + (Number(sn) * 2)) / 4) * 2
+            if ((fro == "") || (cn == "") || (rt == "")) {
+                document.getElementById('es').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((fro > 20) || (cn > 20) || (sn > 20)) {
+                document.getElementById('es').innerHTML = "Erreur"
+            }
+
+
+        }
+
+        function calang() {
+            ango = document.getElementById('ango').value;
+            angc = document.getElementById('angc').value;
+            angs = document.getElementById('angs').value;
+            angl = document.getElementById('rsang').innerHTML = ((Number(ango) + Number(angc) + (Number(angs) * 2)) / 4) * 2
+            if ((ango == "") || (angc == "") || (angs == "")) {
+                document.getElementById('rsang').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((ango > 20) || (angc > 20) || (angs > 20)) {
+                document.getElementById('rsang').innerHTML = "Erreur"
+            }
+        }
+        function calhis() {
+            hiso = document.getElementById('hiso').value;
+            hisc = document.getElementById('hisc').value;
+            hiss = document.getElementById('hiss').value;
+            hist = document.getElementById('rshis').innerHTML = (Number(hiso) + Number(hisc) + (Number(hiss)) * 2) / 4
+            if ((hiso == "") || (hisc == "") || (hiss == "")) {
+                document.getElementById('rshis').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((hiso > 20) || (hisc > 20) || (hiss > 20)) {
+                document.getElementById('rshis').innerHTML = "Erreur"
+            }
+        }
+        function calgeo() {
+            geoo = document.getElementById('geoo').value;
+            geoc = document.getElementById('geoc').value;
+            geos = document.getElementById('geos').value;
+            geom = document.getElementById('rsgeo').innerHTML = (Number(geoo) + Number(geoc) + Number(geos) * 2) / 4
+            if ((geoo == "") || (geoc == "") || (geos == "")) {
+                document.getElementById('rsgeo').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((geoo > 20) || (geoc > 20) || (geos > 20)) {
+                document.getElementById('rsgeo').innerHTML = "Erreur"
+            }
+        }
+        function calop() {
+            opo = document.getElementById('opo').value;
+            opc = document.getElementById('opc').value;
+            ops = document.getElementById('ops').value;
+            opt = document.getElementById('rsop').innerHTML = (Number(opo) + Number(opc) + Number(ops) * 2) / 4
+            if ((opo == "") || (opc == "") || (ops == "")) {
+                document.getElementById('rsop').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((opo > 20) || (opc > 20) || (ops > 20)) {
+                document.getElementById('rsop').innerHTML = "Erreur"
+            }
+        }
+        function calphil() {
+            philc = document.getElementById('philc').value;
+            phils = document.getElementById('phils').value;
+            phil = document.getElementById('rsphil').innerHTML = (Number(philc) + Number(phils) * 2) / 3
+            if ((philc == "") || (phils == "")) {
+                document.getElementById('rsphil').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((philc > 20) || (phils > 20)) {
+                document.getElementById('rsphil').innerHTML = "Erreur"
+            }
+        }
+
+        function calisl() {
+            islo = document.getElementById('islo').value;
+            islc = document.getElementById('islc').value;
+            isls = document.getElementById('isls').value;
+            isl = document.getElementById('rsisl').innerHTML = (Number(islo) + Number(islc) + Number(isls) * 2) / 4
+            if ((islo == "") || (islc == "") || (isls == "")) {
+                document.getElementById('rsisl').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((islo > 20) || (islc > 20) || (isls > 20)) {
+                document.getElementById('rsisl').innerHTML = "Erreur"
+            }
+        }
+
+        function calmath() {
+            mathc = document.getElementById('mathc').value;
+            maths = document.getElementById('maths').value;
+            math = document.getElementById('rsmath').innerHTML = ((Number(mathc) + (Number(maths) * 2)) / 3) * 3
+            if ((mathc == "") || (maths == "")) {
+                document.getElementById('rsmath').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((mathc > 20) || (maths > 20)) {
+                document.getElementById('rsmath').innerHTML = "Erreur"
+            }
+        }
+        function calphy() {
+            phyt = document.getElementById('phyt').value;
+            phyc = document.getElementById('phyc').value;
+            phys = document.getElementById('phys').value;
+            phy = document.getElementById('rsphy').innerHTML = ((Number(phyt) + Number(phyc) + (Number(phys) * 2)) / 4) * 4
+            if ((phyt == "") || (phyc == "") || (phys == "")) {
+                document.getElementById('rsphy').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((phyt > 20) || (phyc > 20) || (phys > 20)) {
+                document.getElementById('rsphy').innerHTML = "Erreur"
+            }
+        }
+        function calprog() {
+            progt = document.getElementById('progt').value;
+            progc = document.getElementById('progc').value;
+            progs = document.getElementById('progs').value;
+            prog = document.getElementById('rsprog').innerHTML = ((Number(progt) + Number(progc) + (Number(progs) * 2)) / 4) * 4
+            if ((progt == "") || (progc == "") || (progs == "")) {
+                document.getElementById('rsprog').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((progt > 20) || (progc > 20) || (progs > 20)) {
+                document.getElementById('rsprog').innerHTML = "Erreur"
+            }
+        }
+
+        function calinf() {
+            inf = document.getElementById('inf').value;
+            infs = document.getElementById('infs').value;
+            info = document.getElementById('rsinf').innerHTML = ((Number(inf) + Number(infs) * 2) / 3)
+            if ((inf == "") || (infs == "")) {
+                document.getElementById('rsinf').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((inf > 20) || (infs > 20)) {
+                document.getElementById('rsinf').innerHTML = "Erreur"
+            }
+        }
+
+        function calsport() {
+            sportc = document.getElementById('sportc').value;
+            sports = document.getElementById('sports').value;
+            sport = document.getElementById('rssport').innerHTML = (Number(sportc) + Number(sports) * 2) / 3
+            if ((sportc == "") || (sports == "")) {
+                document.getElementById('rssport').innerHTML = "saisir votre moyenne!"
+            }
+            else if ((sportc > 20) || (sports > 20)) {
+                document.getElementById('rssport').innerHTML = "Erreur"
+            }
+        }
+        function ss() {
+            document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(phil) + Number(math) + Number(phy) + Number(prog) + Number(info) + Number(isl) + Number(sport)) / 24;
+
+        }
+    </script>
+</body>
+
+</html>
