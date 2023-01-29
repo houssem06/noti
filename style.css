@@ -19,6 +19,20 @@ body {
     border: solid 2px white;
     margin-top: 4%;
 }
+#mad {
+    background-color: darkcyan;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    font-size: 140%;
+    font-family: cursive;
+    border: solid 2px white;
+    
+}
 
 #info {
     background-color: darkcyan;
@@ -230,6 +244,7 @@ nav input {
 #rsisl,
 #rsinf,
 #rssport,
+#rsmad,
 #hh {
     min-height: 2.4rem;
     margin-left: 20%;
