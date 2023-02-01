@@ -273,7 +273,14 @@ nav input {
 
 .result input {
     margin-bottom: 1%;
+    cursor:pointer;
 }
+
+.result input:hover{
+    padding:0.4% 0.9% 0.4% 0.9%;
+    color:red;
+}
+
 a button{
     padding: 0.7% 1.2% 0.7% 1.2%;
     position: relative;
