@@ -146,7 +146,7 @@
         <div id="rssti"></div>
     </div>
 
-    <div id="sport" onmouseleave="calsport()">
+    <div id="sport" onmouseleave="calsport()"><input type="checkbox" id="non">
         Sport: <br>
         <nav>
             <input type="number" id="sportc" placeholder="Control"> <br>
@@ -310,10 +310,13 @@
             else if ((sportc > 20) || (sports > 20)) {
                 document.getElementById('rssport').innerHTML = "Erreur"
             }
+            if(document.getElementById("non").checked)
+                document.getElementById('rssport').innerHTML = "Dispense";
         }
         function ss() {
             document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(sport)) / 23;
-
+            if(document.getElementById("non").checked){
+                document.getElementById('hh').innerHTML =(Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) ) / 22;
         }
     </script>
 </body>
