@@ -271,6 +271,43 @@ nav input {
     border: solid 2px white;
 }
 
+@keyframes bnj{
+    0%{
+        box-shadow: 1px 5px 30px 9px red  ;
+    }
+    10%{
+        box-shadow: 1px 5px 30px 9px green;
+    }
+    20%{
+        box-shadow:1px 5px 30px 9px rgb(21, 0, 128);
+    }
+    30%{
+        box-shadow:1px 5px 30px 9px rgb(208, 221, 64);
+    }
+    40%{
+        box-shadow:1px 5px 30px 9px rgb(107, 0, 128);
+    }
+    50%{
+        box-shadow:1px 5px 30px 9px rgb(232, 24, 184);
+    }
+    60%{
+        box-shadow:1px 5px 30px 9px rgb(0, 124, 128);
+    }
+    70%{
+        box-shadow:1px 5px 30px 9px tomato;
+    }
+    80%{
+        box-shadow:1px 5px 30px 9px rgb(229, 152, 10);
+    }
+    90%{
+        box-shadow:1px 5px 30px 9px rgb(128, 38, 0);
+    }
+    100%{
+        box-shadow:1px 5px 30px 9px rgb(54, 215, 22);
+    }
+    
+}
+
 .result input {
     margin-bottom: 1%;
     cursor:pointer;
