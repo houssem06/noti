@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bac sc</title>
+    <title>Bac science</title>
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -263,8 +263,10 @@
             }
         }
         function ss() {
-            document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(opt) + Number(phil) + Number(math) + Number(phy) + Number(prog) + Number(info) + Number(sport)) / 18;
-
+            total=document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(opt) + Number(phil) + Number(math) + Number(phy) + Number(prog) + Number(info) + Number(sport)) / 18;
+            if(total>=0){
+                document.getElementById('result').style.animation="bnj 3s infinite";
+            }
         }
     </script>
 </body>
