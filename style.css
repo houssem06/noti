@@ -300,10 +300,10 @@ nav input {
         box-shadow:1px 5px 30px 9px rgb(229, 152, 10);
     }
     90%{
-        box-shadow:1px 5px 30px 9px rgb(128, 38, 0);
+        box-shadow:1px 5px 30px 9px rgb(54, 215, 22);
     }
     100%{
-        box-shadow:1px 5px 30px 9px rgb(54, 215, 22);
+        box-shadow: 1px 5px 30px 9px red;
     }
     
 }
