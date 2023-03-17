@@ -172,7 +172,7 @@
 
         <div id="rssport"></div>
     </div>
-    <div class="result">
+    <div class="result" id="result">
         <input type="button" value="Ehseb lkol" onclick="ss()">
         <div id="hh"></div>
     </div>
@@ -330,6 +330,7 @@
         }
 
         function calsport() {
+            non=document.getElementById("non").checked;
             sportc = document.getElementById('sportc').value;
             sports = document.getElementById('sports').value;
             sport = document.getElementById('rssport').innerHTML = (Number(sportc) + Number(sports) * 2) / 3
@@ -339,14 +340,16 @@
             else if ((sportc > 20) || (sports > 20)) {
                 document.getElementById('rssport').innerHTML = "Erreur"
             }
-            if(document.getElementById("non").checked)
+            if(non==true)
                 document.getElementById('rssport').innerHTML = "Dispense";
         }
         function ss() {
-            document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(info) + Number(sport)) / 22;
-            if(document.getElementById("non").checked)
-                document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(info) ) / 21;
-                
+            total=document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(info) + Number(sport)) / 22;
+            if(non==true)
+                total=document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(mad) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(info) ) / 21;
+            if(total>=0){
+                document.getElementById('result').style.animation="bnj 3s infinite";
+            }    
         }
     </script>
 </body>
