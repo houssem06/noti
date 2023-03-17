@@ -132,7 +132,7 @@
 
         <div id="rssport"></div>
     </div>
-    <div class="result">
+    <div class="result" id="result">
         <input type="button" value="Ehseb lkol" onclick="ss()">
         <div id="hh"></div>
     </div>
@@ -267,8 +267,10 @@
             }
         }
         function ss() {
-            document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(phil) + Number(isl) + Number(info) + Number(sport)) / 21;
-
+            total=document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(phil) + Number(isl) + Number(info) + Number(sport)) / 21;
+            if(total>=0){
+                document.getElementById('result').style.animation="bnj 3s infinite";
+            }
         }
     </script>
 </body>
