@@ -153,7 +153,7 @@
 
         <div id="rssport"></div>
     </div>
-    <div class="result">
+    <div class="result" id="result">
         <input type="button" value="Ehseb lkol" onclick="ss()">
         <div id="hh"></div>
         
@@ -297,6 +297,7 @@
             }
         }
         function calsport() {
+            non=document.getElementById("non").checked;
             sportc = document.getElementById('sportc').value;
             sports = document.getElementById('sports').value;
             sport = document.getElementById('rssport').innerHTML = (Number(sportc) + Number(sports) * 2) / 3
@@ -306,13 +307,16 @@
             else if ((sportc > 20) || (sports > 20)) {
                 document.getElementById('rssport').innerHTML = "Erreur!"
             }
-            if(document.getElementById("non").checked)
+            if(non==true)
                 document.getElementById('rssport').innerHTML = "Dispense";
         }
         function ss() {
             total = document.getElementById('hh').innerHTML = (Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(phil) + Number(math) + Number(phy) + Number(prog) + Number(sti) + Number(sport)) / 22;
-            if(document.getElementById("non").checked)
+            if(non==true)
                 document.getElementById('hh').innerHTML =(Number(st) + Number(rt) + Number(angl) + Number(hist) + Number(geom) + Number(opt) + Number(phil) + Number(math) + Number(phy) + Number(prog) + Number(sti) ) / 21;
+            if(hh>=0){
+                document.getElementById('result').style.animation="bnj 3s infinite";
+            }
         }
     </script>
 </body>
