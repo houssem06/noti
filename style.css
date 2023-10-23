@@ -219,7 +219,7 @@ body {
 input {
     padding: 1.6%;
     margin-bottom: 1.5%;
-    border-radius:15px;
+    
 }
 
 nav input {
@@ -227,7 +227,7 @@ nav input {
     margin-bottom: 1.5%;
     font-size: 60%;
     width: 48%;
-
+    border-radius:15px;
 }
 
 #res,
