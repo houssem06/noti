@@ -16,7 +16,6 @@
         Arabe: <br>
         <nav>
             <input type="number" id="ar" placeholder="Oral"><br>
-            <input type="number" id="arc" placeholder="Control"> <br>
             <input type="number" id="ars" placeholder="Synthese"> <br>
         </nav>
         
@@ -138,15 +137,14 @@
 
 
             ar = document.getElementById('ar').value;
-            arc = document.getElementById('arc').value;
             ars = document.getElementById('ars').value;
-            st = document.getElementById('res').innerHTML = ((Number(ar) + Number(arc) + (Number(ars) * 2)) / 4)
+            st = document.getElementById('res').innerHTML = ((Number(ar) +  (Number(ars) * 2)) / 3)
 
 
-            if ((ar == "") || (arc == "") || (ars == "")) {
+            if ((ar == "") || (ars == "")) {
                 document.getElementById('res').innerHTML = "saisir votre moyenne!"
             }
-            else if ((ar > 20) || (rc > 20) || (ars > 20)) {
+            else if ((ar > 20) || (ars > 20)) {
                 document.getElementById('res').innerHTML = "Erreur!"
             }
         }
