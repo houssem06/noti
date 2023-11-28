@@ -330,3 +330,8 @@ a button{
     width: 20px;
     height: 20px;
 }
+a button:hover{
+    padding: 0.4% 1.2% 0.7% 1.2%;
+    color:red;
+}
+
