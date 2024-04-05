@@ -62,7 +62,6 @@
     <div id="option" onmouseleave="calop()">
         Option: <br>
         <nav>
-            <input type="number" id="opo" placeholder="Oral"><br>
             <input type="number" id="opc" placeholder="Control"> <br>
             <input type="number" id="ops" placeholder="Synthese"> <br>
         </nav>
@@ -177,26 +176,25 @@
         }
 
         function calop() {
-            opo = document.getElementById('opo').value;
             opc = document.getElementById('opc').value;
             ops = document.getElementById('ops').value;
-            opt = document.getElementById('rsop').innerHTML = (Number(opo) + Number(opc) + Number(ops) * 2) / 4
-            if ((opo == "") || (opc == "") || (ops == "")) {
-                document.getElementById('rsop').innerHTML = "saisir votre moyenne!"
+            opt = document.getElementById('rsop').innerHTML = (Number(opc) + Number(ops) * 2) / 3;
+            if ((opc == "") || (ops == "")) {
+                document.getElementById('rsop').innerHTML = "saisir votre moyenne!";
             }
             else if ((opo > 20) || (opc > 20) || (ops > 20)) {
-                document.getElementById('rsop').innerHTML = "Erreur!"
+                document.getElementById('rsop').innerHTML = "Erreur!";
             }
         }
         function calphil() {
             philc = document.getElementById('philc').value;
             phils = document.getElementById('phils').value;
-            phil = document.getElementById('rsphil').innerHTML = (Number(philc) + Number(phils) * 2) / 3
+            phil = document.getElementById('rsphil').innerHTML = (Number(philc) + Number(phils) * 2) / 3;
             if ((philc == "") || (phils == "")) {
-                document.getElementById('rsphil').innerHTML = "saisir votre moyenne!"
+                document.getElementById('rsphil').innerHTML = "saisir votre moyenne!";
             }
             else if ((philc > 20) || (phils > 20)) {
-                document.getElementById('rsphil').innerHTML = "Erreur!"
+                document.getElementById('rsphil').innerHTML = "Erreur!";
             }
         }
         function calmath() {
